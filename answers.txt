@@ -1,0 +1,11 @@
+1. 16 commits
+
+2. rjust, DeveloperTommy, Yuriy Brun, Rene Just
+
+3. Hash: c2111cc0d37bfde779a317e533d3a5e68b8ed9e3
+
+4. 188
+
+5. Model.java, Numbers.java, AddNumView.java, MeanView.java, MedianView.java, ModeView.java, NumbersView.java, ResetView.java
+
+6. File: README.md, Hash: da90e878188c6de8870581bdb447299821d7e87b, Commit Message: Updated README.md
