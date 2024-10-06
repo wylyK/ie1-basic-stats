@@ -1,3 +1,8 @@
+PART 1
+
+Team members: Willy Chen, Sowrathi Somasundaram
+URL: https://github.com/wylyK/ie1-basic-stats
+
 1. 16 commits
 
 2. rjust, DeveloperTommy, Yuriy Brun, Rene Just
@@ -12,3 +17,32 @@
 
 Part 2: Q6: Adding the file: 4dd49910f926f31b427f7c01644a34a58b9cbc02
 Creating the function: 0f52cd2a559cf9f1a50e3f21c8aa1d120a3bfc89
+
+QUESTIONS
+
+2. comprehensive procedure for adding a file named MinMaxCalculation.java to a remote Git repository:
+- Commands executed: 
+get touch MinMaxCalculation.java
+code MinMaxCalculation.java (code/vim/nano to open the editor)
+(add content to the file, save and exit)
+git add MinMaxCalculation.java
+git commit -m "Added MinMaxCalculation.java"
+git push
+
+Things to follow if/before merge conflict occurs: 
+git status and review if any merges need to be done.
+And then resolve merge conflicts if any by choosing the version you want to keep.
+
+3. 14 commits were cherry picked. No, the hashes of the commits on the feature branch are different from the hashes in the master branch. 
+They have different hashes since when cherry picking git creates an entirely new commit with the same content and for each new commit git creates a unique hash id.
+
+4. If the cherry picked commits in the new branch have no changes then there will be no conflicts and the branches will be merged
+But if changes have been made to the cherry picked commits in the new branch, there will be merge conflicts.
+If there are changes to the cherry picked commit, it appears twice in the history, if not, it appears only once since
+git tries to ensure cherry picked commits appear only once and not show duplicates but with significant changes it might not be able to detect it.
+
+5. Risks of rebasing includes loss of collaborative work history tracking/gap in tracking changes, it can also lose the timeline since rebasing makes commits and changes appear recent.
+
+6. Once a commit has been pushed, another collaborator is relying on that code version and when we reset a commit, it alters the history and leads to conflicts as new code has been added to an inexistent part of the repository leading to data loss as well.
+
+7. Revert does not remove a commit, instead it adds another commit that removes the changes made by the previous commit.
